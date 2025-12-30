@@ -1,0 +1,4 @@
+[core]
+    remote = mlops-wine
+['remote "mlops-wine"']
+    url = s3://mlops-wine
