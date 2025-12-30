@@ -1,4 +1,5 @@
 [core]
-    remote = wineremote
+    remote = mlops-wine
 ['remote "wineremote"']
-    url = s3://mlops-demo-abhishek-dvc-bucket
+    url = s3://mlops-wine
+
