@@ -28,7 +28,15 @@ def main():
     # Set MLflow tracking URI from env or use default
     tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:7006")
     mlflow.set_tracking_uri(tracking_uri)
-    mlflow.set_experiment(args.experiment)
+    try:
+       experiment = mlflow.get_experiment_by_name(args.experiment)
+        if experiment.lifecycle_stage != "active":
+            mlflow.delete_experiment(experiment.experiment_id)
+            experiment_id = mlflow.create_experiment(args.experiment)
+        else:
+            experiment_id = experiment.experiment_id
+    except mlflow.exceptions.MlflowException:
+        experiment_id = mlflow.create_experiment(args.experiment)
 
     # Load CSV
     if not os.path.exists(args.csv):
@@ -47,7 +55,7 @@ def main():
     )
 
     # Train and log with MLflow
-    with mlflow.start_run(run_name=args.run) as run:
+    with mlflow.start_run(experiment_id=experiment_id,run_name=args.run) as run:
         # Log simple params
         mlflow.log_param("n_estimators", args.n_estimators)
         mlflow.log_param("max_depth", args.max_depth)

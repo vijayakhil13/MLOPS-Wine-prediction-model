@@ -1,0 +1,10 @@
+artifact_location: file:///Users/j.sudharshansharma/Desktop/vineethworkplace/mlops-wine-prediction-model/Wine-Prediction-Model/mlruns/458073196352321735/models/m-4c67e56644364d1b992d3f12e94f202f/artifacts
+creation_timestamp: 1767447015700
+experiment_id: '458073196352321735'
+last_updated_timestamp: 1767447017718
+model_id: m-4c67e56644364d1b992d3f12e94f202f
+model_type: null
+name: model
+source_run_id: 682911a7a5ef4270946fb7188af55171
+status: 2
+status_message: null

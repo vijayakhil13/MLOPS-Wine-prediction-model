@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/j.sudharshansharma/Desktop/vineethworkplace/mlops-wine-prediction-model/Wine-Prediction-Model/mlruns/168144601329817934/2f851a9b5ff54940941a85ee3a5538d5/artifacts
+end_time: 1767447831720
+entry_point_name: ''
+experiment_id: '168144601329817934'
+lifecycle_stage: active
+run_id: 2f851a9b5ff54940941a85ee3a5538d5
+run_name: perfect-run-1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1767447829767
+status: 3
+tags: []
+user_id: j.sudharshansharma

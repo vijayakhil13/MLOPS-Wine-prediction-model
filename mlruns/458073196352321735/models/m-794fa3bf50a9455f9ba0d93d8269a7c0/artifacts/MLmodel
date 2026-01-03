@@ -1,0 +1,22 @@
+artifact_path: file:///Users/j.sudharshansharma/Desktop/vineethworkplace/mlops-wine-prediction-model/Wine-Prediction-Model/mlruns/458073196352321735/models/m-794fa3bf50a9455f9ba0d93d8269a7c0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-794fa3bf50a9455f9ba0d93d8269a7c0
+model_size_bytes: 27465
+model_uuid: m-794fa3bf50a9455f9ba0d93d8269a7c0
+prompts: null
+run_id: d10264a2b549463482d244c51023e495
+utc_time_created: '2026-01-03 13:34:16.603746'
